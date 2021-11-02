@@ -1,0 +1,90 @@
+.job-shadow {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.job-shadow-sidebar {
+  border-right: 1px solid grey;
+}
+
+.job-shadow-sidebar a {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.job-shadow-overview,
+.explore-jobs,
+.shadow-day,
+.forms,
+.contact-us,
+.student-registration {
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.job-shadow-overview h2 {
+  margin-bottom: 5px;
+}
+
+.typical-day-list,
+.shadow-day-list {
+  padding: 0 40px;
+}
+
+.job-opportunities {
+  border-collapse: collapse;
+}
+
+.job-opportunities th,
+.job-opportunities td {
+  border: 1px solid #9e9e9e;
+  padding: 10px;
+}
+
+.job-opportunities th {
+  background: #1c4587ff;
+  color: white;
+}
+
+/* .job-shadow-divider {
+  border: 1px solid grey;
+  margin: 0 20px;
+} */
+
+/* .job-shadow-carousel {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 350px;
+  position: relative;
+}
+
+.job-shadow-carousel img {
+  display: inline-block;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.job-shadow-carousel button {
+  color: white;
+  position: absolute;
+  height: 100%;
+  width: 75px;
+  opacity: 0;
+  transition: 0.5s;
+  background: rgb(166, 0, 0, 0.7);
+}
+
+.job-shadow-carousel button:hover {
+  opacity: 1;
+}
+
+#go-left-btn {
+  left: 0;
+}
+
+#go-right-btn {
+  right: 0;
+} */
