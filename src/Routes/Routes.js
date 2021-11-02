@@ -10,6 +10,7 @@ import SecondaryBar from '../components/NavBars/SecondaryBar';
 import Home from '../components/Home/Home';
 import AboutUs from '../components/AboutUs/AboutUs';
 import JobShadow from '../components/JobShadow/JobShadow';
+import Footer from '../components/Footer/Footer';
 
 const Routes = () => {
     return (
@@ -21,6 +22,7 @@ const Routes = () => {
                 <PublicRoutes path="/job-shadow/:page" exact component={JobShadow} />
                 <PublicRoutes path="/about-us" exact component={AboutUs} />
             </Switch>
+            <Footer />
         </Router>
     )
 }

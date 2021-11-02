@@ -28,9 +28,23 @@ a:focus {
   overflow: none;
 }
 
+.ptsa-website {
+  min-height: 100vh;
+}
+
 .home,
 .job-shadow,
 .about-us {
   padding: 40px;
   font-family: var(--text-font-family);
+  padding-bottom: 25px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 11px;
+  margin-top: 100px;
+  font-family: var(--text-font-family);
+  /* position: absolute; */
+  /* bottom: 0; */
 }

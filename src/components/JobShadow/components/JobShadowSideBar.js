@@ -12,7 +12,7 @@ const JobShadowSideBar = () => {
 
     return (
         <aside className="job-shadow-sidebar">
-            <Link to="/job-shadow/overview" style={{textDecoration: `${selectedLink==='/' ? 'underline' : 'none'}`}}>Job Shadow</Link>
+            <Link to="/job-shadow/overview" style={{textDecoration: `${selectedLink==='/overview' ? 'underline' : 'none'}`}}>Job Shadow</Link>
             <Link to="/job-shadow/explore-jobs" style={{textDecoration: `${selectedLink==='/explore-jobs' ? 'underline' : 'none'}`}}>Explore Jobs</Link>
             <Link to="/job-shadow/host-registration" style={{textDecoration: `${selectedLink==='/host-registration' ? 'underline' : 'none'}`}}>Host Registration</Link>
             <Link to="/job-shadow/student-registration" style={{textDecoration: `${selectedLink==='/student-registration' ? 'underline' : 'none'}`}}>Student Registration</Link>

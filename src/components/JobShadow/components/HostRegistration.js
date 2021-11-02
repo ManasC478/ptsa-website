@@ -3,7 +3,7 @@ import React from 'react'
 const HostRegistration = () => {
     return (
         <div>
-            hi
+            no form here
         </div>
     )
 }
