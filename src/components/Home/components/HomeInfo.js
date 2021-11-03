@@ -11,7 +11,7 @@ const HomeInfo = () => {
             <p>If your company does a matching donation please let us know either in the "comments" section of your payment or via email so we can follow up.</p>
             <p>You do not have to use PayPal to donate: any credit card will work. If you do not have Paypal, all you have to do is click on the yellow button below ("donate") and then click on the little "continue" link on the left of the page. You will then be able to enter your credit card details that will then be safely processed.</p>
             <p>If you want to add any special instructions for the PTSA treasurer, (allocation, multiple memberships, etc.) you will be able to do so in the confirmation page by clicking on the link "Note to the treasurer/FUNDS' ALLOCATION:".</p>
-            <p>Once again, Thanks for your financial support and we hope to see you at one of the future <a href="https://fhs.fuhsd.org/parent-portal/ptsa" target="_blank">PTSA meetings</a></p>
+            <p>Once again, Thanks for your financial support and we hope to see you at one of the future <a href="https://fhs.fuhsd.org/parent-portal/ptsa" rel="noreferrer" target="_blank">PTSA meetings</a></p>
             <p>Click any of the yellow buttons below to donate!</p>
 
             <table className="donate">

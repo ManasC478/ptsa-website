@@ -10,10 +10,12 @@ import './style.css'
 
 const PrimaryBar = () => {
     return (
-        <nav className="primary-nav">
-            <img src={FHSLogo} alt="Fremont High School" className="primary-nav-img" />
-            <img src={PTSALogo} alt="PTA" className="primary-nav-img" />
-            <img src={FHSMascot} alt="Firebirds" className="primary-nav-img" />
+        <nav className="primary-nav-container">
+            <div className="primary-nav">
+                <img src={FHSLogo} alt="Fremont High School" className="primary-nav-img" />
+                <img src={PTSALogo} alt="PTA" className="primary-nav-img" />
+                <img src={FHSMascot} alt="Firebirds" className="primary-nav-img" />
+            </div>
         </nav>
     )
 }

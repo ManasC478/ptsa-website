@@ -4,7 +4,7 @@
 :root {
   --nav-link-color: #fff;
   --nav-links-font-family: "Oswald", sans-serif;
-  --text-font-family: "Montserrat", sans-serif;
+  --text-font-family: "acumin-pro-semi-condensed", sans-serif;
 }
 
 * {
@@ -37,14 +37,25 @@ a:focus {
 .about-us {
   padding: 40px;
   font-family: var(--text-font-family);
-  padding-bottom: 25px;
+  padding-bottom: 16px;
+  line-height: 22px;
 }
 
 .footer {
   text-align: center;
   font-size: 11px;
   margin-top: 100px;
+  margin-bottom: 10px;
   font-family: var(--text-font-family);
-  /* position: absolute; */
-  /* bottom: 0; */
+}
+
+@media (min-width: 1300px) {
+  .secondary-nav,
+  .primary-nav,
+  .home,
+  .job-shadow,
+  .about-us {
+    width: 1300px;
+    margin: 0 auto;
+  }
 }

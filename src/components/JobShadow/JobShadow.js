@@ -40,9 +40,11 @@ const JobShadow = ({ match }) => {
     }
     
     return (
-        <main className="job-shadow">
-            <JobShadowSideBar />
-            {pageType()}
+        <main className="job-shadow-container">
+            <div className="job-shadow">
+                <JobShadowSideBar />
+                {pageType()}
+            </div>
         </main>
     )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 
 // import components
@@ -13,6 +13,7 @@ import JobShadow from '../components/JobShadow/JobShadow';
 import Footer from '../components/Footer/Footer';
 
 const Routes = () => {
+
     return (
         <Router>
             <PrimaryBar />

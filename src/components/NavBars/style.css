@@ -1,6 +1,5 @@
 .primary-nav,
 .secondary-nav {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,15 +14,18 @@
   height: 100%;
 }
 
-.secondary-nav {
+.secondary-nav-container {
   background: rgb(166, 0, 0);
+}
+
+.secondary-nav {
   padding: 15px 40px;
 }
 
 .secondary-nav a {
   color: var(--nav-link-color);
   text-decoration: none;
-  font-family: var(--nav-links-font-family);
+  font-family: var(--text-font-family);
 }
 
 .secondary-nav-links,

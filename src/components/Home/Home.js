@@ -10,10 +10,12 @@ import './style.css';
 
 const Home = () => {
     return (
-        <main className="home">
-            <HomeInfo />
-            <div className="home-divider"></div>
-            <Announcements />
+        <main className="home-container">
+            <div className="home">
+                <HomeInfo />
+                <div className="home-divider"></div>
+                <Announcements />
+            </div>
         </main>
     )
 }
