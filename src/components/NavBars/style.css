@@ -15,7 +15,7 @@
 }
 
 .secondary-nav-container {
-  background: rgb(166, 0, 0);
+  background: var(--primary-color);
 }
 
 .secondary-nav,
@@ -59,9 +59,9 @@
 }
 
 .secondary-nav-stacked {
-  background: rgb(166, 0, 0);
+  background: var(--primary-color);
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
   position: relative;
 }
 
@@ -70,16 +70,38 @@
   color: var(--nav-link-color);
 }
 
-.secondary-nav-stacked svg {
+.drop-down-links {
+  display: block;
+  background: rgba(166, 0, 0, 0.9);
+  transition: 0.5s ease;
+  padding: 20px 20px;
+  text-align: left;
+  position: absolute;
+  top: 100%;
+  width: 100vw;
 }
 
-.drop-down-links {
-  background: rgba(166, 0, 0, 0.7);
-  transition: 0.5s ease;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 20px;
-  text-align: center;
-  position: fixed;
+.drop-down-links li {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.drop-down-links hr {
+  margin: 10px;
   width: 100%;
+}
+
+.nav-social-media {
+  display: flex;
+}
+
+.nav-social-media a {
+  margin-right: 10px;
+  font-size: 34px;
+}
+
+@media (max-width: 500px) {
+  .primary-nav-img {
+    height: 50%;
+  }
 }

@@ -1,5 +1,5 @@
 .about-us h1 {
-  color: #990000;
+  color: var(--primary-color);
 }
 
 .about-us p {

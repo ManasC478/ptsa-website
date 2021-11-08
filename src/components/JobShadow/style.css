@@ -75,6 +75,42 @@
   color: white;
 }
 
+@media (max-width: 800px) {
+  .job-shadow {
+    display: block;
+  }
+
+  .job-shadow-sidebar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    border-right: 7px solid var(--primary-color);
+    border-radius: 0 5px 5px 0;
+  }
+
+  .job-shadow-sidebar a {
+    margin: 10px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .job-shadow-overview,
+  .explore-jobs,
+  .shadow-day,
+  .forms,
+  .contact-us,
+  .student-registration,
+  .host-registration {
+    padding: 0;
+  }
+
+  .job-opportunities th,
+  .job-opportunities td {
+    padding: 5px;
+  }
+}
+
 /* .job-shadow-divider {
   border: 1px solid grey;
   margin: 0 20px;

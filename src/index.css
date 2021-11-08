@@ -3,6 +3,7 @@
 
 :root {
   --nav-link-color: #fff;
+  --primary-color: rgb(166, 0, 0);
   --nav-links-font-family: "Oswald", sans-serif;
   --text-font-family: "acumin-pro-semi-condensed", sans-serif;
 }
@@ -60,5 +61,11 @@ a:focus {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
+  .home,
+  .job-shadow,
+  .about-us {
+    padding: 40px 5px;
+    padding-bottom: 16px;
+  }
 }

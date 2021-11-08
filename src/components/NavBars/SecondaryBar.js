@@ -5,6 +5,10 @@ import { parsePathnameForPage, getDocumentTitle } from '../../utils';
 // import material ui icons
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import CloseIcon from '@mui/icons-material/Close';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import SchoolIcon from '@mui/icons-material/School';
+
 
 // import css
 import './style.css';
@@ -61,14 +65,16 @@ const SecondaryBar = () => {
                     (
                         <div className="secondary-nav-stacked">
                             <button style={{ display: dropDown ? 'inline-block' : 'none' }} onClick={() => setDropDownOpen(!dropDownOpen)}>{dropDownOpen ? <CloseIcon /> : <DehazeIcon />}</button>
-                            <ul className="drop-down-links" style={{ opacity: dropDownOpen ? '1' : '1', top: dropDownOpen ? '100%' : '-100%' }}>
+                            <ul className="drop-down-links" style={{ opacity: dropDownOpen ? '1' : '1', left: dropDownOpen ? '0%' : '-110%' }}>
                                 <li style={{textDecoration: `${selectedLink==='/' ? 'underline' : 'none'}`}}><NavLink to="/">Home</NavLink></li>
                                 <li style={{textDecoration: `${selectedLink==='/job-shadow' ? 'underline' : 'none'}`}}><NavLink to="/job-shadow/overview">Job Shadow</NavLink></li>
                                 <li style={{ textDecoration: `${selectedLink === '/about-us' ? 'underline' : 'none'}` }}><NavLink to="/about-us">About Us</NavLink></li>
                                 <hr />
-                                <li><a href="https://fhs.fuhsd.org/parent-portal/ptsa" rel="noreferrer" target="_blank">Visit us at FHS website</a></li>
-                                <li><a href="https://www.facebook.com/fremonthighptsa/" rel="noreferrer" target="_blank">Follow us on Facebook</a></li>
-                                <li><a href="https://www.instagram.com/fremontptsa/" rel="noreferrer" target="_blank">Follow us on Instagram</a></li>
+                                <div className="nav-social-media">
+                                    <li><a href="https://fhs.fuhsd.org/parent-portal/ptsa" rel="noreferrer" target="_blank"><InstagramIcon fontSize={'inherit'} /></a></li>
+                                    <li><a href="https://www.facebook.com/fremonthighptsa/" rel="noreferrer" target="_blank"><FacebookIcon fontSize={'inherit'} /></a></li>
+                                    <li><a href="https://www.instagram.com/fremontptsa/" rel="noreferrer" target="_blank"><SchoolIcon fontSize={'inherit'} /></a></li>
+                                </div>
                             </ul>
                         </div>
                     )

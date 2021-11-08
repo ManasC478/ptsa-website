@@ -10,6 +10,8 @@
 .donate {
   border-collapse: collapse;
   margin-top: 40px;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .donate th,
@@ -44,4 +46,14 @@
 
 .announcements-list li {
   margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+
+  .announcements {
+    width: 100%;
+  }
 }
