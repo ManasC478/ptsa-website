@@ -25,7 +25,7 @@ a {
 
 button:focus,
 a:focus {
-  overflow: none;
+  outline: none;
 }
 
 .ptsa-website {
@@ -58,4 +58,7 @@ a:focus {
     width: 1300px;
     margin: 0 auto;
   }
+}
+
+@media (max-width: 800px) {
 }

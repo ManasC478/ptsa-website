@@ -18,18 +18,21 @@
   background: rgb(166, 0, 0);
 }
 
-.secondary-nav {
+.secondary-nav,
+.secondary-nav-stacked {
   padding: 15px 40px;
 }
 
-.secondary-nav a {
+.secondary-nav a,
+.secondary-nav-stacked a {
   color: var(--nav-link-color);
   text-decoration: none;
   font-family: var(--text-font-family);
 }
 
 .secondary-nav-links,
-.secondary-nav-socialmedia-links {
+.secondary-nav-socialmedia-links,
+.drop-down-links {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -53,4 +56,30 @@
   border: 0.1px solid var(--nav-link-color);
   height: 15px;
   margin: 0 5px;
+}
+
+.secondary-nav-stacked {
+  background: rgb(166, 0, 0);
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.secondary-nav-stacked button {
+  background: transparent;
+  color: var(--nav-link-color);
+}
+
+.secondary-nav-stacked svg {
+}
+
+.drop-down-links {
+  background: rgba(166, 0, 0, 0.7);
+  transition: 0.5s ease;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
 }
