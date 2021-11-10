@@ -18,17 +18,33 @@ const HomeInfo = () => {
                 <thead>
                     <tr>
                         <th><span>$160</span><span>Family donation plus one member</span></th>
-                        <th><span>$170</span><span>Family donation plus two member</span></th>
+                        <th><span>$170</span><span>Family donation plus two members</span></th>
                         <th><span>$$</span><span>Choose your donation a amount</span></th>
                         <th><span>$10</span><span>Student / Teacher Membership</span></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src={DonatePTSA} alt="Donate to PTSA" /></td>
-                        <td><img src={DonatePTSA} alt="Donate to PTSA" /></td>
-                        <td><img src={DonatePTSA} alt="Donate to PTSA" /></td>
-                        <td><img src={DonatePTSA} alt="Donate to PTSA" /></td>
+                        <td><form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="46VAYA5S6Q5XJ" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form></td>
+                        <td><form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="QQQBN24W2FXMG" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form></td>
+                        <td><form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="PLSF5B7RLBPV2" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form></td>
+                        <td><form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="QSXNDXHB5YVZN" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form></td>
                     </tr>
                 </tbody>
             </table>
