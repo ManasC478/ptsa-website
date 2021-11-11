@@ -11,6 +11,8 @@ import Home from '../components/Home/Home';
 import AboutUs from '../components/AboutUs/AboutUs';
 import JobShadow from '../components/JobShadow/JobShadow';
 import Footer from '../components/Footer/Footer';
+import Thanks from '../components/Thanks/Thanks';
+import Cancel from '../components/Cancel/Cancel';
 
 const Routes = () => {
 
@@ -22,6 +24,8 @@ const Routes = () => {
                 <PublicRoutes path="/" exact component={Home} />
                 <PublicRoutes path="/job-shadow/:page" exact component={JobShadow} />
                 <PublicRoutes path="/about-us" exact component={AboutUs} />
+                <PublicRoutes path="/cancel" exact component={Cancel} />
+                <PublicRoutes path="/thanks" exact component={Thanks} />
             </Switch>
             <Footer />
         </Router>
