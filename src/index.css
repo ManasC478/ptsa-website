@@ -35,11 +35,18 @@ a:focus {
 
 .home,
 .job-shadow,
-.about-us {
+.about-us,
+.cancel,
+.thanks {
   padding: 40px;
   font-family: var(--text-font-family);
   padding-bottom: 16px;
   line-height: 22px;
+}
+
+.cancel h1,
+.thanks h1 {
+  text-align: center;
 }
 
 .footer {
@@ -55,7 +62,9 @@ a:focus {
   .primary-nav,
   .home,
   .job-shadow,
-  .about-us {
+  .about-us,
+  .cancel,
+  .thanks {
     width: 1300px;
     margin: 0 auto;
   }
@@ -64,7 +73,9 @@ a:focus {
 @media (max-width: 500px) {
   .home,
   .job-shadow,
-  .about-us {
+  .about-us,
+  .cancel,
+  .thanks {
     padding: 40px 5px;
     padding-bottom: 16px;
   }

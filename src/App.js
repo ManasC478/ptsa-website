@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { getDocumentTitle } from './utils';
 
 // import components
-import Routes from './Routes/Routes';
+import Routers from './Routes/Routers';
 
 function App() {
 
   return (
     <main id="ptsa-website">
-      <Routes />
+      <Routers />
     </main>
   );
 }

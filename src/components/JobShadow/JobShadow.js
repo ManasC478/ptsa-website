@@ -1,4 +1,6 @@
 import React from 'react';
+import { useLocation } from 'react-router';
+import { parsePathnameForPage } from '../../utils';
 
 // import components
 import JobShadowSideBar from './components/JobShadowSideBar';
@@ -14,27 +16,29 @@ import HostRegistration from './components/HostRegistration';
 import './style.css';
 
 const JobShadow = ({ match }) => {
+    const location = useLocation();
+
     let pageType;
-    switch (match.params.page) {
-        case 'overview':
+    switch (parsePathnameForPage(location.pathname, 2)) {
+        case '/overview':
             pageType = JobShadowOverview;
             break;
-        case 'explore-jobs':
+        case '/explore-jobs':
             pageType = ExploreJobs;
             break;
-        case 'shadow-day':
+        case '/shadow-day':
             pageType = ShadowDay;
             break;
-        case 'forms':
+        case '/forms':
             pageType = Forms;
             break;
-        case 'contact-us':
+        case '/contact-us':
             pageType = ContactUs;
             break;
-        case 'student-registration':
+        case '/student-registration':
             pageType = StudentRegistration;
             break;
-        case 'host-registration':
+        case '/host-registration':
             pageType = HostRegistration;
             break;
     }

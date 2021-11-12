@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Routes } from 'react-router-dom';
+import { Route } from 'react-router';
 
 // import components
 import PublicRoutes from './PublicRoutes';
@@ -14,22 +15,23 @@ import Footer from '../components/Footer/Footer';
 import Thanks from '../components/Thanks/Thanks';
 import Cancel from '../components/Cancel/Cancel';
 
-const Routes = () => {
+const Routers = () => {
 
     return (
         <Router>
             <PrimaryBar />
             <SecondaryBar />
-            <Switch>
-                <PublicRoutes path="/" exact component={Home} />
-                <PublicRoutes path="/job-shadow/:page" exact component={JobShadow} />
-                <PublicRoutes path="/about-us" exact component={AboutUs} />
-                <PublicRoutes path="/cancel" exact component={Cancel} />
-                <PublicRoutes path="/thanks" exact component={Thanks} />
-            </Switch>
+            <Routes>
+                {/* <Route {...rest} render={props => <Component {...props} />} /> */}
+                <Route path="/" element={<Home />} />
+                <Route path="/job-shadow/:page" element={<JobShadow />} />
+                <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/cancel" element={<Cancel />} />
+                <Route path="/thanks" element={<Thanks />} />
+            </Routes>
             <Footer />
         </Router>
     )
 }
 
-export default Routes
+export default Routers
